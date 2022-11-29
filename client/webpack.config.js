@@ -9,13 +9,13 @@ const { InjectManifest } = require("workbox-webpack-plugin");
 module.exports = () => {
   return {
     mode: "development",
-    devtool: "none",
+    // devtool: "none",
     entry: {
       main: "./src/js/index.js",
       install: "./src/js/install.js",
     },
     output: {
-      filename: "[name].bundle[contentHash].js",
+      filename: "[name].js",
       path: path.resolve(__dirname, "dist"),
     },
     plugins: [

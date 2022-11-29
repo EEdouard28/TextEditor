@@ -4,31 +4,23 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "webpack --config webpack.config.js",
-    "start:dev": "",
-    "server": "",
-    "build": "",
-    "install": "",
-    "client": ""
+    "start:dev": "concurrently \"cd client && npm run build\" \"cd server && npm run server\" ",
+    "start": "npm run build && cd server && node server.js",
+    "server": "cd server node server.js --ignore client",
+    "build": "cd client && npm run build",
+    "install": "cd client && npm install",
+    "client": "cd client && npm start",
+    "heroku-prebuild": "npm install --dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "idb": "^7.1.1",
-    "if-env": "^1.0.4"
+    "express": "^4.17.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.5",
-    "@babel/preset-env": "^7.20.2",
-    "babel-loader": "^9.1.0",
     "concurrently": "^5.2.0",
-    "css-loader": "^6.7.2",
     "nodemon": "^2.0.4",
-    "style-loader": "^3.3.1",
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.0",
-    "webpack-pwa-manifest": "^4.3.0"
+    "webpack": "^5.69.1"
   }
 }
