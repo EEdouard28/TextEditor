@@ -20,6 +20,9 @@
     "if-env": "^1.0.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
     "concurrently": "^5.2.0",
     "css-loader": "^6.7.2",
     "nodemon": "^2.0.4",
