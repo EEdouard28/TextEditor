@@ -1,11 +1,7 @@
 # Text Editor Starter Code
-# Tech Blog
-### Built With
-*  [![NodeJS][Node.js]][Nodejs-url]
-
   
   ## Description
- 
+ A single-page text editor application built with Javascript and webpack that runs in the browser and meets PWA criterias. This Text editor features a installation button to download onto your system for offline capabilities.
 
 ## Table of Contents
 - [Description](#description)
@@ -17,8 +13,9 @@
 - [Questions](#questions)
 
   ## Installation
-  Clone the repo on your root folder
+Clone the repository onto your computer system, ensure that you have node.js install. Run npm install and npm run start from the root directory. The application should start up the backend and serve the client.
 
+## Screenshots
 
   ## Credits
   Evince Edouard
@@ -31,5 +28,3 @@
   none
 
 
-[Nodejs-url]: https://nodejs.org/en/ 
-[Node.js]: https://img.shields.io/badge/NodeJS-NodeJS-green
