@@ -1,4 +1,4 @@
-# Text Editor Starter Code
+# Text Editor 
   
   ## Description
  A single-page text editor application built with Javascript and webpack that runs in the browser and meets PWA criterias. This Text editor features a installation button to download onto your system for offline capabilities.
